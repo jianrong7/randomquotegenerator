@@ -31,11 +31,24 @@ const newQuote = () => {
     let values = changeAuthor(index);
     quote.innerHTML = values[0];
     authorText.innerHTML = values[1];
+    let color = getRandomColor();
+    document.querySelector("#body").style.backgroundColor = color;
+    document.querySelectorAll("button").forEach(button => {
+        button.style.backgroundColor = color;
+    })
     return;
 }
 const getRandomArbitrary = (min, max) => {
     return Math.floor(Math.random() * (max - min) + min);
 }
+const getRandomColor = () => {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  }
 document.onload = newQuote();
 
 link.addEventListener('click',function(event){

@@ -12,7 +12,34 @@ body {
     border-radius: 5px;
     background-color: white;
     padding: 50px;
+    width: 700px;
+    height: auto;
 }
 #text {
     font-size: 1.75rem;
+}
+#author {
+    margin: 5px;
+    float: right;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+button {
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 5px;
+    outline:none;
+}
+button:hover {
+    transform: scale(1.2);
+    transition-duration: .2s;
+}
+.footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }

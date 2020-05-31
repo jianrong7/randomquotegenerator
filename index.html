@@ -12,14 +12,18 @@
   <script defer src="fcc.js"></script>
 </head>
 
-<body>
+<body id="body">
     <div id="quote-box">
-        <div id="text"></div>
-        <div id="author"></div>
-        <button type="button" id="new-quote" onclick="newQuote()">New Quote</button>
-        <a target="_blank" id="tweetShare">
-            <button type="button" id="tweet-quote">tweet</button>
-        </a>
+        <div class="header">
+            <div id="text"></div>
+            <div id="author"></div>
+        </div>
+        <div class="footer">
+            <button type="button" id="new-quote" onclick="newQuote()">New Quote</button>
+            <a target="_blank" id="tweetShare">
+                <button type="button" id="tweet-quote">tweet</button>
+            </a>
+        </div>
     </div>  
 </body>
 
