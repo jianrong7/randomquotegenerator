@@ -9,14 +9,17 @@
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <script defer src="scripts.js"></script>
+  <script defer src="fcc.js"></script>
 </head>
 
 <body>
     <div id="quote-box">
-        <div id="text">"Whether you think you can or you think you can't, you're right.</div>
-        <div id="author">- Henry Ford</div>
-        <button type="button" id="new-quote">New Quote</button>
-        <button type="button" id="tweet-quote">tweet</button>
+        <div id="text"></div>
+        <div id="author"></div>
+        <button type="button" id="new-quote" onclick="newQuote()">New Quote</button>
+        <a target="_blank" id="tweetShare">
+            <button type="button" id="tweet-quote">tweet</button>
+        </a>
     </div>  
 </body>
 
